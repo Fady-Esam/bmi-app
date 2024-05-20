@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/gender_container.dart';
 import 'result_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -49,32 +50,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       });
                     }
                   },
-                  child: Container(
-                    height: 190,
-                    width: 180,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: isMale ? Colors.teal : Colors.blueGrey,
-                    ),
-                    child: const Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(bottom: 20, top: 12),
-                          child: Icon(
-                            Icons.male,
-                            size: 100,
-                            color: Color.fromARGB(255, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Male',
-                          style: TextStyle(
-                            fontSize: 27,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                      ],
-                    ),
+                  child: GenderContainer(
+                    isMale: isMale,
+                    gender: 'Male',
                   ),
                 ),
                 const SizedBox(width: 20),
@@ -86,32 +64,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       });
                     }
                   },
-                  child: Container(
-                    height: 190,
-                    width: 180,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: isMale ? Colors.blueGrey : Colors.teal,
-                    ),
-                    child: const Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(bottom: 20, top: 12),
-                          child: Icon(
-                            Icons.female,
-                            size: 100,
-                            color: Color.fromARGB(255, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Female',
-                          style: TextStyle(
-                            fontSize: 27,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                      ],
-                    ),
+                  child: GenderContainer(
+                    isMale: !isMale,
+                    gender: 'Female',
                   ),
                 ),
               ],
@@ -363,3 +318,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
