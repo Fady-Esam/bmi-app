@@ -12,7 +12,7 @@ A sleek Flutter BMI (Body Mass Index) App focused on simplicity and accuracy. Bu
 
 ---
 
-## Preview Video
+## 🎬 Preview
 
 [BMI.webm](https://github.com/Fady-Esam/BMI-App/assets/146977882/b64d2be2-4638-4414-bddc-420865c75715)
 
