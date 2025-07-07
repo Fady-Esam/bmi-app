@@ -1,10 +1,10 @@
 # 🧍‍♂️⚖️ Flutter BMI App
 
-A sleek Flutter BMI (Body Mass Index) App focused on simplicity and accuracy.  
+A sleek **Flutter** BMI (Body Mass Index) App focused on simplicity and accuracy.  
 Built with a clean design to deliver a smooth user experience, providing personalized health insights in a user-friendly way.
 
 ---
-## ✨ Features
+## ✨Key Features
 
 - ⚖️ Accurate BMI Calculation
 - 📊 BMI Result with Health Status Interpretation
